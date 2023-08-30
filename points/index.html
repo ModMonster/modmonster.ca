@@ -48,7 +48,7 @@
           <!-- Modal body -->
           <div class="modal-body">
             <p>Channel points are a custom system coded by ModMonster for his live streams, inspired by Twitch channel points.</p>
-            <p>You earn <strong>100</strong> channel points for every <strong>5</strong> minutes of watching the stream, and can redeem the points for any of the rewards found on this page.</p>
+            <p>You earn <strong>10</strong> channel points for every <strong>5</strong> minutes of watching the stream, and can redeem the points for any of the rewards found on this page. <span class="text-info"><strong>Channel members</strong> earn double the points!</span></p>
             <p>To redeem one of these rewards, just <strong>click</strong> on the reward to copy the command, and paste it into stream chat. It will be activated shortly after.</p>
             <p>To check how many points you have, type <code>!points</code> into the stream chat.</p>
           </div>
@@ -102,73 +102,83 @@
     <div style="display: none;" id="alert-search-fail" class="alert alert-danger mt-4">Oops, there's nothing here!</div>
 
     <div class="row reward-grid">
-      <h2 class="my-4">Visual Effects</h2>
+      <h2 class="my-4">Stream Effects</h2>
       <div class="card-parent col-md-6 col-lg-4 col-xl-3 my-2">
         <div class="card" onclick="copyCommand('barrelroll')">
-          <img class="card-img-top ratio-1x1" src="img/rewards/visual/doabarrelroll.png" alt="Reward image">
+          <img class="card-img-top ratio-1x1" src="img/rewards/stream/doabarrelroll.png" alt="Reward image">
           <div class="card-body">
             <h4 class="card-title">Do a Barrel Roll</h4>
-            <h6 class="card-subtitle mb-2 text-body-secondary"><i class="fa fa-coins fa-fw"></i> 200 coins</h6>
+            <h6 class="card-subtitle mb-2 text-body-secondary"><i class="fa fa-coins fa-fw"></i> 200 points</h6>
             <p class="card-text reward-description" data-replace="Click to copy command"><span>Wheeeeee!</span></p>
           </div>
         </div>
       </div>
       <div class="card-parent col-md-6 col-lg-4 col-xl-3 my-2">
         <div class="card" onclick="copyCommand('drugs')">
-          <img class="card-img-top ratio-1x1" src="img/rewards/visual/drugs.png" alt="Reward image">
+          <img class="card-img-top ratio-1x1" src="img/rewards/stream/drugs.png" alt="Reward image">
           <div class="card-body">
             <h4 class="card-title">Drugs</h4>
-            <h6 class="card-subtitle mb-2 text-body-secondary"><i class="fa fa-coins fa-fw"></i> 350 coins</h6>
+            <h6 class="card-subtitle mb-2 text-body-secondary"><i class="fa fa-coins fa-fw"></i> 350 points</h6>
             <p class="card-text reward-description" data-replace="Click to copy command"><span>Mario had too many mushrooms...</span></p>
           </div>
         </div>
       </div>
       <div class="card-parent col-md-6 col-lg-4 col-xl-3 my-2">
         <div class="card" onclick="copyCommand('miichannel')">
-          <img class="card-img-top ratio-1x1" src="img/rewards/visual/miichannel.png" alt="Reward image">
+          <img class="card-img-top ratio-1x1" src="img/rewards/stream/miichannel.png" alt="Reward image">
           <div class="card-body">
             <h4 class="card-title">Mii Channel</h4>
-            <h6 class="card-subtitle mb-2 text-body-secondary"><i class="fa fa-coins fa-fw"></i> 350 coins</h6>
+            <h6 class="card-subtitle mb-2 text-body-secondary"><i class="fa fa-coins fa-fw"></i> 350 points</h6>
             <p class="card-text reward-description" data-replace="Click to copy command"><span>Very distracting. Very effective.</span></p>
           </div>
         </div>
       </div>
       <div class="card-parent col-md-6 col-lg-4 col-xl-3 my-2">
+        <div class="card" onclick="copyCommand('muted')">
+          <img class="card-img-top ratio-1x1" src="img/rewards/stream/muted.png" alt="Reward image">
+          <div class="card-body">
+            <h4 class="card-title">Muted</h4>
+            <h6 class="card-subtitle mb-2 text-body-secondary"><i class="fa fa-coins fa-fw"></i> 1000 points</h6>
+            <p class="card-text reward-description" data-replace="Click to copy command"><span>Mutes my mic for 10 seconds</span></p>
+          </div>
+        </div>
+      </div>
+      <div class="card-parent col-md-6 col-lg-4 col-xl-3 my-2">
         <div class="card" onclick="copyCommand('tacticalnuke')">
-          <img class="card-img-top ratio-1x1" src="img/rewards/visual/tacticalnuke.png" alt="Reward image">
+          <img class="card-img-top ratio-1x1" src="img/rewards/stream/tacticalnuke.png" alt="Reward image">
           <div class="card-body">
             <h4 class="card-title">Tactical Nuke</h4>
-            <h6 class="card-subtitle mb-2 text-body-secondary"><i class="fa fa-coins fa-fw"></i> 200 coins</h6>
+            <h6 class="card-subtitle mb-2 text-body-secondary"><i class="fa fa-coins fa-fw"></i> 200 points</h6>
             <p class="card-text reward-description" data-replace="Click to copy command"><span>TACTICAL NUKE, INCOMING!</span></p>
           </div>
         </div>
       </div>
       <div class="card-parent col-md-6 col-lg-4 col-xl-3 my-2">
         <div class="card" data-bs-toggle="modal" data-bs-target="#ttsModal">
-          <img class="card-img-top ratio-1x1" src="img/rewards/visual/tts.png" alt="Reward image">
+          <img class="card-img-top ratio-1x1" src="img/rewards/stream/tts.png" alt="Reward image">
           <div class="card-body">
             <h4 class="card-title">Text-to-Speech</h4>
-            <h6 class="card-subtitle mb-2 text-body-secondary"><i class="fa fa-coins fa-fw"></i> 300 coins</h6>
+            <h6 class="card-subtitle mb-2 text-body-secondary"><i class="fa fa-coins fa-fw"></i> 300 points</h6>
             <p class="card-text reward-description" data-replace="Click to copy command"><span>Get your message read by TTS!</span></p>
           </div>
         </div>
       </div>
       <div class="card-parent col-md-6 col-lg-4 col-xl-3 my-2">
         <div class="card" onclick="copyCommand('what')">
-          <img class="card-img-top ratio-1x1" src="img/rewards/visual/what.png" alt="Reward image">
+          <img class="card-img-top ratio-1x1" src="img/rewards/stream/what.png" alt="Reward image">
           <div class="card-body">
             <h4 class="card-title" style="letter-spacing: 12px;">WHAT</h4>
-            <h6 class="card-subtitle mb-2 text-body-secondary"><i class="fa fa-coins fa-fw"></i> 250 coins</h6>
+            <h6 class="card-subtitle mb-2 text-body-secondary"><i class="fa fa-coins fa-fw"></i> 250 points</h6>
             <p class="card-text reward-description" data-replace="Click to copy command"><span>HEIHHH?!?!</span></p>
           </div>
         </div>
       </div>
       <div class="card-parent col-md-6 col-lg-4 col-xl-3 my-2">
         <div class="card" onclick="copyCommand('youdied')">
-          <img class="card-img-top ratio-1x1" src="img/rewards/visual/youdied.png" alt="Reward image">
+          <img class="card-img-top ratio-1x1" src="img/rewards/stream/youdied.png" alt="Reward image">
           <div class="card-body">
             <h4 class="card-title">You Died</h4>
-            <h6 class="card-subtitle mb-2 text-body-secondary"><i class="fa fa-coins fa-fw"></i> 350 coins</h6>
+            <h6 class="card-subtitle mb-2 text-body-secondary"><i class="fa fa-coins fa-fw"></i> 350 points</h6>
             <p class="card-text reward-description" data-replace="Click to copy command"><span>RIP</span></p>
           </div>
         </div>
@@ -185,7 +195,7 @@
               <h4 class="card-title">Applause</h4>
               <i onclick="playSound('sfx/applause.mp3')" role="button" class="fa fa-volume-low fa-fw float-right my-2" data-bs-toggle="tooltip" title="Preview sound"></i>
             </div>
-            <h6 class="card-subtitle mb-2 text-body-secondary"><i class="fa fa-coins fa-fw"></i> 25 coins</h6>
+            <h6 class="card-subtitle mb-2 text-body-secondary"><i class="fa fa-coins fa-fw"></i> 25 points</h6>
             <p class="card-text reward-description" data-replace="Click to copy command"><span>You did it! Hooray! Incredible job!</span></p>
           </div>
         </div>
@@ -198,7 +208,7 @@
               <h4 class="card-title">Bong</h4>
               <i onclick="playSound('sfx/bong.mp3')" role="button" class="fa fa-volume-low fa-fw float-right my-2" data-bs-toggle="tooltip" title="Preview sound"></i>
             </div>
-            <h6 class="card-subtitle mb-2 text-body-secondary"><i class="fa fa-coins fa-fw"></i> 25 coins</h6>
+            <h6 class="card-subtitle mb-2 text-body-secondary"><i class="fa fa-coins fa-fw"></i> 25 points</h6>
             <p class="card-text reward-description" data-replace="Click to copy command"><span>Taco Bell moment</span></p>
           </div>
         </div>
@@ -211,21 +221,8 @@
               <h4 class="card-title">Bruh</h4>
               <i onclick="playSound('sfx/bruh.mp3')" role="button" class="fa fa-volume-low fa-fw float-right my-2" data-bs-toggle="tooltip" title="Preview sound"></i>
             </div>
-            <h6 class="card-subtitle mb-2 text-body-secondary"><i class="fa fa-coins fa-fw"></i> 25 coins</h6>
+            <h6 class="card-subtitle mb-2 text-body-secondary"><i class="fa fa-coins fa-fw"></i> 25 points</h6>
             <p class="card-text reward-description" data-replace="Click to copy command"><span>Bruh</span></p>
-          </div>
-        </div>
-      </div>
-      <div class="card-parent col-md-6 col-lg-4 col-xl-3 my-2">
-        <div class="card" onclick="copyCommand('carelesswhisper')">
-          <img class="card-img-top ratio-1x1" src="img/rewards/sfx/carelesswhisper.png" alt="Reward image">
-          <div class="card-body">
-            <div class="d-flex justify-content-between">
-              <h4 class="card-title">Careless Whisper</h4>
-              <i onclick="playSound('sfx/carelesswhisper.mp3')" role="button" class="fa fa-volume-low fa-fw float-right my-2" data-bs-toggle="tooltip" title="Preview sound"></i>
-            </div>
-            <h6 class="card-subtitle mb-2 text-body-secondary"><i class="fa fa-coins fa-fw"></i> 75 coins</h6>
-            <p class="card-text reward-description" data-replace="Click to copy command"><span>When Nolan sees Purah</span></p>
           </div>
         </div>
       </div>
@@ -237,7 +234,7 @@
               <h4 class="card-title">Drink Water, Idiot!</h4>
               <i onclick="playSound('sfx/drinkwateridiot.mp3')" role="button" class="fa fa-volume-low fa-fw float-right my-2" data-bs-toggle="tooltip" title="Preview sound"></i>
             </div>
-            <h6 class="card-subtitle mb-2 text-body-secondary"><i class="fa fa-coins fa-fw"></i> 50 coins</h6>
+            <h6 class="card-subtitle mb-2 text-body-secondary"><i class="fa fa-coins fa-fw"></i> 50 points</h6>
             <p class="card-text reward-description" data-replace="Click to copy command"><span>Me yelling at myself to drink water.</span></p>
           </div>
         </div>
@@ -250,7 +247,7 @@
               <h4 class="card-title">Fart</h4>
               <i onclick="playSound('sfx/fart.mp3')" role="button" class="fa fa-volume-low fa-fw float-right my-2" data-bs-toggle="tooltip" title="Preview sound"></i>
             </div>
-            <h6 class="card-subtitle mb-2 text-body-secondary"><i class="fa fa-coins fa-fw"></i> 25 coins</h6>
+            <h6 class="card-subtitle mb-2 text-body-secondary"><i class="fa fa-coins fa-fw"></i> 25 points</h6>
             <p class="card-text reward-description" data-replace="Click to copy command"><span>Really immature</span></p>
           </div>
         </div>
@@ -263,7 +260,7 @@
               <h4 class="card-title">Knock Knock</h4>
               <i onclick="playSound('sfx/knock.mp3')" role="button" class="fa fa-volume-low fa-fw float-right my-2" data-bs-toggle="tooltip" title="Preview sound"></i>
             </div>
-            <h6 class="card-subtitle mb-2 text-body-secondary"><i class="fa fa-coins fa-fw"></i> 100 coins</h6>
+            <h6 class="card-subtitle mb-2 text-body-secondary"><i class="fa fa-coins fa-fw"></i> 75 points</h6>
             <p class="card-text reward-description" data-replace="Click to copy command"><span>That one realistic knock sound</span></p>
           </div>
         </div>
@@ -276,7 +273,7 @@
               <h4 class="card-title">Laugh Track</h4>
               <i onclick="playSound('sfx/laughtrack.mp3')" role="button" class="fa fa-volume-low fa-fw float-right my-2" data-bs-toggle="tooltip" title="Preview sound"></i>
             </div>
-            <h6 class="card-subtitle mb-2 text-body-secondary"><i class="fa fa-coins fa-fw"></i> 25 coins</h6>
+            <h6 class="card-subtitle mb-2 text-body-secondary"><i class="fa fa-coins fa-fw"></i> 50 points</h6>
             <p class="card-text reward-description" data-replace="Click to copy command"><span>AHAHAHAHAHAH!!</span></p>
           </div>
         </div>
@@ -289,7 +286,7 @@
               <h4 class="card-title">Noice</h4>
               <i onclick="playSound('sfx/noice.mp3')" role="button" class="fa fa-volume-low fa-fw float-right my-2" data-bs-toggle="tooltip" title="Preview sound"></i>
             </div>
-            <h6 class="card-subtitle mb-2 text-body-secondary"><i class="fa fa-coins fa-fw"></i> 25 coins</h6>
+            <h6 class="card-subtitle mb-2 text-body-secondary"><i class="fa fa-coins fa-fw"></i> 25 points</h6>
             <p class="card-text reward-description" data-replace="Click to copy command"><span>Nice.</span></p>
           </div>
         </div>
@@ -302,7 +299,7 @@
               <h4 class="card-title">OHHH BANANA</h4>
               <i onclick="playSound('sfx/ohbanana.mp3')" role="button" class="fa fa-volume-low fa-fw float-right my-2" data-bs-toggle="tooltip" title="Preview sound"></i>
             </div>
-            <h6 class="card-subtitle mb-2 text-body-secondary"><i class="fa fa-coins fa-fw"></i> 25 coins</h6>
+            <h6 class="card-subtitle mb-2 text-body-secondary"><i class="fa fa-coins fa-fw"></i> 50 points</h6>
             <p class="card-text reward-description" data-replace="Click to copy command"><span>OHHHHHHHHHHHHH BANANA</span></p>
           </div>
         </div>
@@ -315,8 +312,21 @@
               <h4 class="card-title">Quack</h4>
               <i onclick="playSound('sfx/quack.mp3')" role="button" class="fa fa-volume-low fa-fw float-right my-2" data-bs-toggle="tooltip" title="Preview sound"></i>
             </div>
-            <h6 class="card-subtitle mb-2 text-body-secondary"><i class="fa fa-coins fa-fw"></i> 25 coins</h6>
+            <h6 class="card-subtitle mb-2 text-body-secondary"><i class="fa fa-coins fa-fw"></i> 10 points</h6>
             <p class="card-text reward-description" data-replace="Click to copy command"><span>Quaxly??</span></p>
+          </div>
+        </div>
+      </div>
+      <div class="card-parent col-md-6 col-lg-4 col-xl-3 my-2">
+        <div class="card" onclick="copyCommand('sadtrombone')">
+          <img class="card-img-top ratio-1x1" src="img/rewards/sfx/sadtrombone.png" alt="Reward image">
+          <div class="card-body">
+            <div class="d-flex justify-content-between">
+              <h4 class="card-title">Sad Trombone</h4>
+              <i onclick="playSound('sfx/sadtrombone.mp3')" role="button" class="fa fa-volume-low fa-fw float-right my-2" data-bs-toggle="tooltip" title="Preview sound"></i>
+            </div>
+            <h6 class="card-subtitle mb-2 text-body-secondary"><i class="fa fa-coins fa-fw"></i> 35 points</h6>
+            <p class="card-text reward-description" data-replace="Click to copy command"><span>Womp womp womp wommmp...</span></p>
           </div>
         </div>
       </div>
@@ -328,7 +338,7 @@
               <h4 class="card-title">YOU LOUSY!!</h4>
               <i onclick="playSound('sfx/youlousy.mp3')" role="button" class="fa fa-volume-low fa-fw float-right my-2" data-bs-toggle="tooltip" title="Preview sound"></i>
             </div>
-            <h6 class="card-subtitle mb-2 text-body-secondary"><i class="fa fa-coins fa-fw"></i> 25 coins</h6>
+            <h6 class="card-subtitle mb-2 text-body-secondary"><i class="fa fa-coins fa-fw"></i> 50 points</h6>
             <p class="card-text reward-description" data-replace="Click to copy command"><span>Waluigi calls me lousy :(</span></p>
           </div>
         </div>
