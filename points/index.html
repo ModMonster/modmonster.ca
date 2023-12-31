@@ -102,7 +102,36 @@
     <div style="display: none;" id="alert-search-fail" class="alert alert-danger mt-4">Oops, there's nothing here!</div>
 
     <div class="row reward-grid">
-      <h2 class="my-4">Stream Effects</h2>
+      <h2 class="my-4 text-warning"><i class="fa fa-exclamation-circle fa-xs fa-fw"></i> New Effects</h2>
+      <div class="card-parent col-md-6 col-lg-4 col-xl-3 my-2">
+        <div class="card" onclick="copyCommand('fnaf')">
+          <img class="card-img-top ratio-1x1" src="img/rewards/sfx/fnaf.png" alt="Reward image">
+          <div class="card-body">
+            <h6 class="card-text text-muted">Sound Only</h6>
+            <div class="d-flex justify-content-between">
+              <h4 class="card-title">Music Box</h4>
+              <i onclick="playSound('sfx/fnaf.mp3')" role="button" class="fa fa-volume-low fa-fw float-right my-2" data-bs-toggle="tooltip" title="Preview sound"></i>
+            </div>
+            <h6 class="card-subtitle mb-2 text-body-secondary"><i class="fa fa-coins fa-fw"></i> 50 points</h6>
+            <p class="card-text reward-description" data-replace="Click to copy command"><span>very calming, not scary</span></p>
+          </div>
+        </div>
+      </div>
+      <div class="card-parent col-md-6 col-lg-4 col-xl-3 my-2">
+        <div class="card" onclick="copyCommand('superstar')">
+          <img class="card-img-top ratio-1x1" src="img/rewards/stream/superstar.png" alt="Reward image">
+          <div class="card-body">
+            <h6 class="card-text text-muted">Sound & Visuals</h6>
+            <h4 class="card-title">Super Star</h4>
+            <h6 class="card-subtitle mb-2 text-body-secondary"><i class="fa fa-coins fa-fw"></i> 200 points</h6>
+            <p class="card-text reward-description" data-replace="Click to copy command"><span>Wahooooooo!</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row reward-grid">
+      <h2 class="my-4">Sound & Visuals</h2>
       <div class="card-parent col-md-6 col-lg-4 col-xl-3 my-2">
         <div class="card" onclick="copyCommand('barrelroll')">
           <img class="card-img-top ratio-1x1" src="img/rewards/stream/doabarrelroll.png" alt="Reward image">
@@ -140,6 +169,17 @@
             <h4 class="card-title">Muted</h4>
             <h6 class="card-subtitle mb-2 text-body-secondary"><i class="fa fa-coins fa-fw"></i> 1000 points</h6>
             <p class="card-text reward-description" data-replace="Click to copy command"><span>Mutes my mic for 10 seconds</span></p>
+          </div>
+        </div>
+      </div>
+      <div class="card-parent col-md-6 col-lg-4 col-xl-3 my-2">
+        <div class="card" onclick="copyCommand('superstar')">
+          <img class="card-img-top ratio-1x1" src="img/rewards/stream/superstar.png" alt="Reward image">
+          <div class="card-body">
+            <h6 class="card-text text-muted">Sound & Visuals</h6>
+            <h4 class="card-title">Super Star</h4>
+            <h6 class="card-subtitle mb-2 text-body-secondary"><i class="fa fa-coins fa-fw"></i> 200 points</h6>
+            <p class="card-text reward-description" data-replace="Click to copy command"><span>Wahooooooo!</span></p>
           </div>
         </div>
       </div>
@@ -186,7 +226,7 @@
     </div>
 
     <div class="row reward-grid">
-      <h2 class="my-4">Sound Effects</h2>
+      <h2 class="my-4">Sound Only</h2>
       <div class="card-parent col-md-6 col-lg-4 col-xl-3 my-2">
         <div class="card" onclick="copyCommand('applause')">
           <img class="card-img-top ratio-1x1" src="img/rewards/sfx/applause.png" alt="Reward image">
@@ -235,7 +275,7 @@
               <i onclick="playSound('sfx/drinkwateridiot.mp3')" role="button" class="fa fa-volume-low fa-fw float-right my-2" data-bs-toggle="tooltip" title="Preview sound"></i>
             </div>
             <h6 class="card-subtitle mb-2 text-body-secondary"><i class="fa fa-coins fa-fw"></i> 50 points</h6>
-            <p class="card-text reward-description" data-replace="Click to copy command"><span>Me yelling at myself to drink water.</span></p>
+            <p class="card-text reward-description" data-replace="Click to copy command"><span>Stay hydrated.</span></p>
           </div>
         </div>
       </div>
@@ -249,6 +289,20 @@
             </div>
             <h6 class="card-subtitle mb-2 text-body-secondary"><i class="fa fa-coins fa-fw"></i> 25 points</h6>
             <p class="card-text reward-description" data-replace="Click to copy command"><span>Really immature</span></p>
+          </div>
+        </div>
+      </div>
+      <div class="card-parent col-md-6 col-lg-4 col-xl-3 my-2">
+        <div class="card" onclick="copyCommand('fnaf')">
+          <img class="card-img-top ratio-1x1" src="img/rewards/sfx/fnaf.png" alt="Reward image">
+          <div class="card-body">
+            <h6 class="card-text text-muted">Sound Only</h6>
+            <div class="d-flex justify-content-between">
+              <h4 class="card-title">Music Box</h4>
+              <i onclick="playSound('sfx/fnaf.mp3')" role="button" class="fa fa-volume-low fa-fw float-right my-2" data-bs-toggle="tooltip" title="Preview sound"></i>
+            </div>
+            <h6 class="card-subtitle mb-2 text-body-secondary"><i class="fa fa-coins fa-fw"></i> 50 points</h6>
+            <p class="card-text reward-description" data-replace="Click to copy command"><span>very calming, not scary</span></p>
           </div>
         </div>
       </div>
@@ -300,7 +354,7 @@
               <i onclick="playSound('sfx/ohbanana.mp3')" role="button" class="fa fa-volume-low fa-fw float-right my-2" data-bs-toggle="tooltip" title="Preview sound"></i>
             </div>
             <h6 class="card-subtitle mb-2 text-body-secondary"><i class="fa fa-coins fa-fw"></i> 50 points</h6>
-            <p class="card-text reward-description" data-replace="Click to copy command"><span>OHHHHHHHHHHHHH BANANA</span></p>
+            <p class="card-text reward-description" data-replace="Click to copy command"><span>OHHHHHHHHHHHH BANANA</span></p>
           </div>
         </div>
       </div>
