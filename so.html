@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Meta tags -->
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+  <!-- Page title -->
+  <title><3</title>
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+</head>
+<body>
+  <p id="so">I am so </p>
+
+  <script>
+    console.log(window.scrollY);
+    console.log(document.documentElement.scrollHeight);
+    console.log(window.innerHeight);
+    while (document.documentElement.scrollHeight <= window.innerHeight * 2) {
+      document.getElementById("so").innerHTML += "so ";
+    }
+
+    window.addEventListener('scroll',()=>{
+        console.log(window.scrollY) //scrolled from top
+        console.log(window.innerHeight) //visible part of screen
+        while (window.scrollY + window.innerHeight >= document.documentElement.scrollHeight) {
+          document.getElementById("so").innerHTML += "so ".repeat(100);
+        }
+    })
+  </script>
+</body>
+</html>
